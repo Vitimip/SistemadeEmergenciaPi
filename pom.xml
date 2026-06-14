@@ -1,0 +1,72 @@
+GERÊNCIA DE CONFIGURAÇÃO DE SOFTWARE - ICs
+
+Projeto: Emergency System (SPA Angular + Spring Boot)
+
+1. BACKEND
+- Nome: emergency-system-backend
+- Tipo: API REST (Spring Boot)
+- Tecnologia: Java 17 + Spring Boot
+- Estrutura: controllers, models, services, repository, patterns
+- Localização: /src/main/java/com.vitalistech.emergencysystem
+- Descrição: API responsável pela gestão de pacientes, ocorrências, frota e medicamentos.
+
+Controllers:
+- PacienteController
+- OcorrenciaController
+- MedicamentoController
+- FrotaController
+
+Models:
+- Paciente
+- Ocorrencia
+- Medicamento
+- Frota
+
+Patterns aplicados:
+- Factory
+- Adapter
+- Decorator
+- Iterator
+- Singleton
+- Template
+
+--------------------------------------
+
+2. FRONTEND
+- Nome: emergency-system-frontend
+- Tipo: SPA (Single Page Application)
+- Tecnologia: Angular 22
+- Localização: /frontend
+- Descrição: Interface web para gerenciamento do sistema.
+- Funcionalidades:
+  - Listagem de pacientes
+  - Cadastro de paciente
+  - Gestão de medicamentos
+  - Registro de ocorrências
+  - Gestão de frota
+
+--------------------------------------
+
+3. BANCO DE DADOS
+- Nome: emergency-db
+- Tipo: Banco de Dados em Arquivo (Persistente)
+- Tecnologia: H2 Database
+- URL: jdbc:h2:file:./data/db-api
+- Driver: org.h2.Driver
+- Descrição: Banco H2 persistente em arquivo para armazenamento dos dados do sistema.
+
+--------------------------------------
+
+4. PIPELINE CI
+- Nome: github-actions-ci
+- Tipo: Integração Contínua
+- Localização: /.github/workflows/ci.yml
+- Descrição: Automatiza build e validação do backend e frontend.
+
+--------------------------------------
+
+5. DOCUMENTAÇÃO
+- Nome: docs-project
+- Tipo: Documentação técnica GCS
+- Localização: /docs
+- Descrição: Contém ICs, Baselines, RFC, matriz de rastreabilidade e versionamento.
